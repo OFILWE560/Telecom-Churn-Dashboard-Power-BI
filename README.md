@@ -68,6 +68,17 @@ CALCULATE(
 `Churn Rate` and `Intl Plan Churn Rate` are formatted as Percentage.
 
 ## 6. Dashboard design
+## Dashboard Preview
+
+### Page 1 - Overview
+![Page 1 Overview](Page%201.png)
+
+### Page 2 - Behavior Drivers
+![Page 2 Behavior Drivers](Page%202.png)
+
+## Published Dashboard
+
+🔗 **Live dashboard link:** https://app.powerbi.com/links/RLytz5e0Nf?ctid=ee292977-7b58-4df4-8138-50d0de7d28d8&pbi_source=linkShare
 
 ### Page 1 - Overview
 
@@ -90,16 +101,16 @@ CALCULATE(
 
 ## 7. Key findings from the built dashboard
 
-- **International plan customers churn far more** — roughly 35% churn rate vs. ~10% for customers without one, the single strongest visual signal in the dashboard.
-- **3+ customer service calls is a strong churn predictor** — churn rate drops sharply and steadily from the 3+ calls bucket down to 0 calls.
-- **Voice mail plan customers churn less** — customers without a voice mail plan churn at roughly double the rate of those with one.
-- **Newer and mid-tenure customers (0–150 days) churn more than long-tenure customers (150+ days)** — retention risk is front-loaded early in the customer lifecycle.
-- **No strong standalone relationship between total minutes and churn** in the scatter — churned customers (dark blue) are scattered across the full usage range rather than clustering at one extreme, suggesting usage volume alone isn't a reliable churn predictor; it likely needs to be combined with service calls or plan type to be useful.
+- **International plan customers churn far more**:roughly 35% churn rate vs. ~10% for customers without one, the single strongest visual signal in the dashboard.
+- **3+ customer service calls is a strong churn predictor**:churn rate drops sharply and steadily from the 3+ calls bucket down to 0 calls.
+- **Voice mail plan customers churn less**:customers without a voice mail plan churn at roughly double the rate of those with one.
+- **Newer and mid-tenure customers (0–150 days) churn more than long-tenure customers (150+ days)** :retention risk is front-loaded early in the customer lifecycle.
+- **No strong standalone relationship between total minutes and churn** in the scatter, churned customers (dark blue) are scattered across the full usage range rather than clustering at one extreme, suggesting usage volume alone isn't a reliable churn predictor; it likely needs to be combined with service calls or plan type to be useful.
 
 ## 8. Known issues / possible follow-ups
 
-- The `Tenure Group` and `Service Calls Bucket` slicer tiles currently truncate to "150" instead of "150+ days" in some views — worth widening the slicer tiles or shortening the label text.
-- The map's color gradient is currently using default endpoint colors (not yet switched to a single light-to-dark hue) — revisit Format > Fill colors > fx to set explicit min/max colors for clearer at-a-glance reading.
+- The `Tenure Group` and `Service Calls Bucket` slicer tiles currently truncate to "150" instead of "150+ days" in some views, worth widening the slicer tiles or shortening the label text.
+- The map's color gradient is currently using default endpoint colors (not yet switched to a single light-to-dark hue), revisit Format > Fill colors > fx to set explicit min/max colors for clearer at-a-glance reading.
 - Consider adding page navigation buttons between Page 1 and Page 2 for easier viewer navigation.
 - Consider renaming any remaining auto-generated visual titles (e.g. "Sum of X by Y" style) to plain-language titles for readability.
 
